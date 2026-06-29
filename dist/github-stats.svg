@@ -1,0 +1,129 @@
+<svg width="775" height="250" viewBox="0 0 775 250"
+     xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="hugotakeda's GitHub Stats">
+
+  <title>hugotakeda's GitHub Stats</title>
+
+  <defs>
+    <clipPath id="bar-clip">
+      <rect x="435" y="65" width="310" height="10" rx="5"/>
+    </clipPath>
+    <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#3fb950"/>
+      <stop offset="100%" stop-color="#3fb950" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes fadeL  { from { opacity:0; transform:translateX(-8px) } to { opacity:1; transform:translateX(0) } }
+    @keyframes fadeR  { from { opacity:0; transform:translateX(8px)  } to { opacity:1; transform:translateX(0) } }
+    @keyframes ring   { from { stroke-dashoffset:188.49555921538757 } to { stroke-dashoffset:41.61049872304362 } }
+    @keyframes pop    { from { opacity:0; transform:scale(.5) } to { opacity:1; transform:scale(1) } }
+    @keyframes barIn  { from { transform:scaleX(0) } to { transform:scaleX(1) } }
+
+    .ttl   { font:600 16px 'Segoe UI',Ubuntu,'Helvetica Neue',sans-serif; fill:#e6edf3 }
+    .lbl   { font:400 13.5px 'Segoe UI',Ubuntu,sans-serif; fill:#8b949e }
+    .val   { font:700 13.5px 'Segoe UI',Ubuntu,sans-serif; fill:#e6edf3 }
+    .grd   { font:800 22px  'Segoe UI',Ubuntu,sans-serif; fill:#3fb950 }
+    .lname { font:600 12px  'Segoe UI',Ubuntu,sans-serif; fill:#e6edf3 }
+    .lpct  { font:400 11px  'Segoe UI',Ubuntu,sans-serif; fill:#8b949e }
+
+    .fade-l     { animation:fadeL .6s ease forwards; opacity:0 }
+    .fade-r     { animation:fadeR .5s ease forwards; opacity:0 }
+    .grade-ring { animation:ring 1.4s ease-out forwards; stroke-dashoffset:188.49555921538757 }
+    .grade-ltr  { animation:pop .5s ease forwards; animation-delay:.8s; opacity:0;
+                  transform-origin:360px 155px }
+    .bar-group  { animation:barIn .8s ease-out forwards; transform-origin:435px 70px }
+  </style>
+
+  <!-- ─── Background ─── -->
+  <rect x="0" y="0" width="775" height="250" rx="8" ry="8"
+        fill="#0d1117"/>
+
+  <!-- ─── Divider ─── -->
+  <line x1="410" y1="22" x2="410" y2="228"
+        stroke="#30363d" stroke-width="1" opacity=".4"/>
+
+  <!-- ═══ LEFT: Stats ═══ -->
+  <text x="30" y="44" class="ttl">hugotakeda's GitHub Stats</text>
+  
+      <g class="fade-l" style="animation-delay:150ms">
+        <circle cx="38" cy="80" r="4.5" fill="#f2cc60" opacity="0.9"/>
+        <text x="56" y="84.5" class="lbl">Total Stars Earned</text>
+        <text x="300" y="84.5" class="val" text-anchor="end">8</text>
+      </g>
+      <g class="fade-l" style="animation-delay:250ms">
+        <circle cx="38" cy="114" r="4.5" fill="#3fb950" opacity="0.9"/>
+        <text x="56" y="118.5" class="lbl">Total Commits (2026)</text>
+        <text x="300" y="118.5" class="val" text-anchor="end">312</text>
+      </g>
+      <g class="fade-l" style="animation-delay:350ms">
+        <circle cx="38" cy="148" r="4.5" fill="#6e40c9" opacity="0.9"/>
+        <text x="56" y="152.5" class="lbl">Total PRs</text>
+        <text x="300" y="152.5" class="val" text-anchor="end">0</text>
+      </g>
+      <g class="fade-l" style="animation-delay:450ms">
+        <circle cx="38" cy="182" r="4.5" fill="#ff7b72" opacity="0.9"/>
+        <text x="56" y="186.5" class="lbl">Total Issues</text>
+        <text x="300" y="186.5" class="val" text-anchor="end">1</text>
+      </g>
+      <g class="fade-l" style="animation-delay:550ms">
+        <circle cx="38" cy="216" r="4.5" fill="#58a6ff" opacity="0.9"/>
+        <text x="56" y="220.5" class="lbl">Contributed to (last year)</text>
+        <text x="300" y="220.5" class="val" text-anchor="end">0</text>
+      </g>
+
+  <!-- Grade Ring -->
+  <circle cx="360" cy="155" r="30" fill="none"
+          stroke="#30363d" stroke-width="5" opacity=".25"/>
+  <circle cx="360" cy="155" r="30" fill="none"
+          stroke="url(#ring-grad)" stroke-width="5"
+          stroke-dasharray="188.49555921538757" stroke-linecap="round"
+          transform="rotate(-90,360,155)"
+          class="grade-ring"/>
+  <g class="grade-ltr">
+    <text x="360" y="163" text-anchor="middle" class="grd">A</text>
+  </g>
+
+  <!-- ═══ RIGHT: Languages ═══ -->
+  <text x="435" y="44" class="ttl">Most Used Languages</text>
+
+  <!-- Language bar -->
+  <g clip-path="url(#bar-clip)" class="bar-group">
+    <rect x="435" y="65" width="81.251" height="10" fill="#4F5D95"/><rect x="516.251" y="65" width="67.952" height="10" fill="#3178c6"/><rect x="584.203" y="65" width="63.674" height="10" fill="#e34c26"/><rect x="647.877" y="65" width="29.573999999999995" height="10" fill="#f1e05a"/><rect x="677.4509999999999" y="65" width="27.032" height="10" fill="#663399"/><rect x="704.483" y="65" width="25.419999999999998" height="10" fill="#3572A5"/>
+  </g>
+
+  <!-- Language legend -->
+  
+      <g class="fade-r" style="animation-delay:400ms">
+        <circle cx="435" cy="105" r="5" fill="#4F5D95"/>
+        <text x="449" y="109" class="lname">PHP</text>
+        <text x="449" y="124" class="lpct">26.21%</text>
+      </g>
+      <g class="fade-r" style="animation-delay:480ms">
+        <circle cx="435" cy="143" r="5" fill="#3178c6"/>
+        <text x="449" y="147" class="lname">TypeScript</text>
+        <text x="449" y="162" class="lpct">21.92%</text>
+      </g>
+      <g class="fade-r" style="animation-delay:560ms">
+        <circle cx="435" cy="181" r="5" fill="#e34c26"/>
+        <text x="449" y="185" class="lname">HTML</text>
+        <text x="449" y="200" class="lpct">20.54%</text>
+      </g>
+      <g class="fade-r" style="animation-delay:640ms">
+        <circle cx="600" cy="105" r="5" fill="#f1e05a"/>
+        <text x="614" y="109" class="lname">JavaScript</text>
+        <text x="614" y="124" class="lpct">9.54%</text>
+      </g>
+      <g class="fade-r" style="animation-delay:720ms">
+        <circle cx="600" cy="143" r="5" fill="#663399"/>
+        <text x="614" y="147" class="lname">CSS</text>
+        <text x="614" y="162" class="lpct">8.72%</text>
+      </g>
+      <g class="fade-r" style="animation-delay:800ms">
+        <circle cx="600" cy="181" r="5" fill="#3572A5"/>
+        <text x="614" y="185" class="lname">Python</text>
+        <text x="614" y="200" class="lpct">8.20%</text>
+      </g>
+
+</svg>
