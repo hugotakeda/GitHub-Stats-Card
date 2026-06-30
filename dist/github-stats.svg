@@ -17,7 +17,7 @@
   <style>
     @keyframes fadeL  { from { opacity:0; transform:translateX(-8px) } to { opacity:1; transform:translateX(0) } }
     @keyframes fadeR  { from { opacity:0; transform:translateX(8px)  } to { opacity:1; transform:translateX(0) } }
-    @keyframes ring   { from { stroke-dashoffset:188.49555921538757 } to { stroke-dashoffset:40.977295481606006 } }
+    @keyframes ring   { from { stroke-dashoffset:188.49555921538757 } to { stroke-dashoffset:40.88840763891271 } }
     @keyframes pop    { from { opacity:0; transform:scale(.5) } to { opacity:1; transform:scale(1) } }
     @keyframes barIn  { from { transform:scaleX(0) } to { transform:scaleX(1) } }
 
@@ -65,7 +65,7 @@
       <g class="fade-l" style="animation-delay:450ms">
         <circle cx="38" cy="182" r="4.5" fill="#ff7b72" opacity="0.9"/>
         <text x="56" y="186.5" class="lbl">Total Issues</text>
-        <text x="300" y="186.5" class="val" text-anchor="end">1</text>
+        <text x="300" y="186.5" class="val" text-anchor="end">2</text>
       </g>
       <g class="fade-l" style="animation-delay:550ms">
         <circle cx="38" cy="216" r="4.5" fill="#58a6ff" opacity="0.9"/>
