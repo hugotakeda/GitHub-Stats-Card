@@ -17,7 +17,7 @@
   <style>
     @keyframes fadeL  { from { opacity:0; transform:translateX(-8px) } to { opacity:1; transform:translateX(0) } }
     @keyframes fadeR  { from { opacity:0; transform:translateX(8px)  } to { opacity:1; transform:translateX(0) } }
-    @keyframes ring   { from { stroke-dashoffset:188.49555921538757 } to { stroke-dashoffset:37.6991118430775 } }
+    @keyframes ring   { from { stroke-dashoffset:188.49555921538757 } to { stroke-dashoffset:37.39991254273562 } }
     @keyframes pop    { from { opacity:0; transform:scale(.5) } to { opacity:1; transform:scale(1) } }
     @keyframes barIn  { from { transform:scaleX(0) } to { transform:scaleX(1) } }
 
@@ -55,7 +55,7 @@
       <g class="fade-l" style="animation-delay:250ms">
         <circle cx="38" cy="114" r="4.5" fill="#3fb950" opacity="0.9"/>
         <text x="56" y="118.5" class="lbl">Total Commits (2026)</text>
-        <text x="300" y="118.5" class="val" text-anchor="end">359</text>
+        <text x="300" y="118.5" class="val" text-anchor="end">363</text>
       </g>
       <g class="fade-l" style="animation-delay:350ms">
         <circle cx="38" cy="148" r="4.5" fill="#6e40c9" opacity="0.9"/>
@@ -90,7 +90,7 @@
 
   <!-- Language bar -->
   <g clip-path="url(#bar-clip)" class="bar-group">
-    <rect x="435" y="65" width="106.237" height="10" fill="#4F5D95"/><rect x="541.237" y="65" width="75.14399999999999" height="10" fill="#f1e05a"/><rect x="616.381" y="65" width="36.115" height="10" fill="#663399"/><rect x="652.496" y="65" width="35.805" height="10" fill="#e34c26"/><rect x="688.3009999999999" y="65" width="18.785999999999998" height="10" fill="#3572A5"/><rect x="707.0869999999999" y="65" width="18.166" height="10" fill="#3178c6"/>
+    <rect x="435" y="65" width="100.409" height="10" fill="#4F5D95"/><rect x="535.409" y="65" width="71.021" height="10" fill="#f1e05a"/><rect x="606.43" y="65" width="50.871" height="10" fill="#e34c26"/><rect x="657.3009999999999" y="65" width="34.131" height="10" fill="#663399"/><rect x="691.4319999999999" y="65" width="17.732" height="10" fill="#3572A5"/><rect x="709.1639999999999" y="65" width="17.174" height="10" fill="#3178c6"/>
   </g>
 
   <!-- Language legend -->
@@ -98,32 +98,32 @@
       <g class="fade-r" style="animation-delay:400ms">
         <circle cx="435" cy="105" r="5" fill="#4F5D95"/>
         <text x="449" y="109" class="lname">PHP</text>
-        <text x="449" y="124" class="lpct">34.27%</text>
+        <text x="449" y="124" class="lpct">32.39%</text>
       </g>
       <g class="fade-r" style="animation-delay:480ms">
         <circle cx="435" cy="143" r="5" fill="#f1e05a"/>
         <text x="449" y="147" class="lname">JavaScript</text>
-        <text x="449" y="162" class="lpct">24.24%</text>
+        <text x="449" y="162" class="lpct">22.91%</text>
       </g>
       <g class="fade-r" style="animation-delay:560ms">
-        <circle cx="435" cy="181" r="5" fill="#663399"/>
-        <text x="449" y="185" class="lname">CSS</text>
-        <text x="449" y="200" class="lpct">11.65%</text>
+        <circle cx="435" cy="181" r="5" fill="#e34c26"/>
+        <text x="449" y="185" class="lname">HTML</text>
+        <text x="449" y="200" class="lpct">16.41%</text>
       </g>
       <g class="fade-r" style="animation-delay:640ms">
-        <circle cx="600" cy="105" r="5" fill="#e34c26"/>
-        <text x="614" y="109" class="lname">HTML</text>
-        <text x="614" y="124" class="lpct">11.55%</text>
+        <circle cx="600" cy="105" r="5" fill="#663399"/>
+        <text x="614" y="109" class="lname">CSS</text>
+        <text x="614" y="124" class="lpct">11.01%</text>
       </g>
       <g class="fade-r" style="animation-delay:720ms">
         <circle cx="600" cy="143" r="5" fill="#3572A5"/>
         <text x="614" y="147" class="lname">Python</text>
-        <text x="614" y="162" class="lpct">6.06%</text>
+        <text x="614" y="162" class="lpct">5.72%</text>
       </g>
       <g class="fade-r" style="animation-delay:800ms">
         <circle cx="600" cy="181" r="5" fill="#3178c6"/>
         <text x="614" y="185" class="lname">TypeScript</text>
-        <text x="614" y="200" class="lpct">5.86%</text>
+        <text x="614" y="200" class="lpct">5.54%</text>
       </g>
 
 </svg>
