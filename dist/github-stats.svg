@@ -17,7 +17,7 @@
   <style>
     @keyframes fadeL  { from { opacity:0; transform:translateX(-8px) } to { opacity:1; transform:translateX(0) } }
     @keyframes fadeR  { from { opacity:0; transform:translateX(8px)  } to { opacity:1; transform:translateX(0) } }
-    @keyframes ring   { from { stroke-dashoffset:188.49555921538757 } to { stroke-dashoffset:20.290157073776925 } }
+    @keyframes ring   { from { stroke-dashoffset:188.49555921538757 } to { stroke-dashoffset:20.13841444608843 } }
     @keyframes pop    { from { opacity:0; transform:scale(.5) } to { opacity:1; transform:scale(1) } }
     @keyframes barIn  { from { transform:scaleX(0) } to { transform:scaleX(1) } }
 
@@ -50,12 +50,12 @@
       <g class="fade-l" style="animation-delay:150ms">
         <circle cx="38" cy="80" r="4.5" fill="#f2cc60" opacity="0.9"/>
         <text x="56" y="84.5" class="lbl">Total Stars Earned</text>
-        <text x="300" y="84.5" class="val" text-anchor="end">12</text>
+        <text x="300" y="84.5" class="val" text-anchor="end">13</text>
       </g>
       <g class="fade-l" style="animation-delay:250ms">
         <circle cx="38" cy="114" r="4.5" fill="#3fb950" opacity="0.9"/>
         <text x="56" y="118.5" class="lbl">Total Commits (2026)</text>
-        <text x="300" y="118.5" class="val" text-anchor="end">750</text>
+        <text x="300" y="118.5" class="val" text-anchor="end">752</text>
       </g>
       <g class="fade-l" style="animation-delay:350ms">
         <circle cx="38" cy="148" r="4.5" fill="#6e40c9" opacity="0.9"/>
@@ -90,7 +90,7 @@
 
   <!-- Language bar -->
   <g clip-path="url(#bar-clip)" class="bar-group">
-    <rect x="435" y="65" width="212.62900000000002" height="10" fill="#f1e05a"/><rect x="647.629" y="65" width="47.554" height="10" fill="#3178c6"/><rect x="695.183" y="65" width="19.747000000000003" height="10" fill="#663399"/><rect x="714.93" y="65" width="12.431" height="10" fill="#4F5D95"/><rect x="727.361" y="65" width="12.4" height="10" fill="#e34c26"/><rect x="739.761" y="65" width="2.356" height="10" fill="#3572A5"/>
+    <rect x="435" y="65" width="201.96500000000003" height="10" fill="#f1e05a"/><rect x="636.965" y="65" width="45.19800000000001" height="10" fill="#3178c6"/><rect x="682.163" y="65" width="24.923999999999996" height="10" fill="#4F5D95"/><rect x="707.087" y="65" width="18.755" height="10" fill="#663399"/><rect x="725.842" y="65" width="11.78" height="10" fill="#e34c26"/><rect x="737.622" y="65" width="2.387" height="10" fill="#f7523f"/>
   </g>
 
   <!-- Language legend -->
@@ -98,32 +98,32 @@
       <g class="fade-r" style="animation-delay:400ms">
         <circle cx="435" cy="105" r="5" fill="#f1e05a"/>
         <text x="449" y="109" class="lname">JavaScript</text>
-        <text x="449" y="124" class="lpct">68.59%</text>
+        <text x="449" y="124" class="lpct">65.15%</text>
       </g>
       <g class="fade-r" style="animation-delay:480ms">
         <circle cx="435" cy="143" r="5" fill="#3178c6"/>
         <text x="449" y="147" class="lname">TypeScript</text>
-        <text x="449" y="162" class="lpct">15.34%</text>
+        <text x="449" y="162" class="lpct">14.58%</text>
       </g>
       <g class="fade-r" style="animation-delay:560ms">
-        <circle cx="435" cy="181" r="5" fill="#663399"/>
-        <text x="449" y="185" class="lname">CSS</text>
-        <text x="449" y="200" class="lpct">6.37%</text>
+        <circle cx="435" cy="181" r="5" fill="#4F5D95"/>
+        <text x="449" y="185" class="lname">PHP</text>
+        <text x="449" y="200" class="lpct">8.04%</text>
       </g>
       <g class="fade-r" style="animation-delay:640ms">
-        <circle cx="600" cy="105" r="5" fill="#4F5D95"/>
-        <text x="614" y="109" class="lname">PHP</text>
-        <text x="614" y="124" class="lpct">4.01%</text>
+        <circle cx="600" cy="105" r="5" fill="#663399"/>
+        <text x="614" y="109" class="lname">CSS</text>
+        <text x="614" y="124" class="lpct">6.05%</text>
       </g>
       <g class="fade-r" style="animation-delay:720ms">
         <circle cx="600" cy="143" r="5" fill="#e34c26"/>
         <text x="614" y="147" class="lname">HTML</text>
-        <text x="614" y="162" class="lpct">4.00%</text>
+        <text x="614" y="162" class="lpct">3.80%</text>
       </g>
       <g class="fade-r" style="animation-delay:800ms">
-        <circle cx="600" cy="181" r="5" fill="#3572A5"/>
-        <text x="614" y="185" class="lname">Python</text>
-        <text x="614" y="200" class="lpct">0.76%</text>
+        <circle cx="600" cy="181" r="5" fill="#f7523f"/>
+        <text x="614" y="185" class="lname">Blade</text>
+        <text x="614" y="200" class="lpct">0.77%</text>
       </g>
 
 </svg>
