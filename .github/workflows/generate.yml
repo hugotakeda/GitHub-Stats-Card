@@ -10,9 +10,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,8 +29,25 @@ jobs:
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
+      - name: Test LOC generator
+        run: node --test tests/generateLoc.test.js
+
+      - name: Restore LOC cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/loc.json
+          key: loc-v1-${{ github.repository_owner }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            loc-v1-${{ github.repository_owner }}-
+
       - name: Generate SVG
         run: node scripts/generateStats.js
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+
+      - name: Generate Lines of Code SVG
+        run: node scripts/generateLoc.js
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GH_TOKEN: ${{ secrets.STATS_TOKEN }}
@@ -33,7 +55,8 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist/
           git diff --staged --quiet || git commit -m "📊 Update GitHub Stats SVG"
+          git pull --rebase origin main
           git push

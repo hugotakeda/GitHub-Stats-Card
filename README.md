@@ -37,7 +37,7 @@ Automatically generates a premium SVG showing your stats and most used languages
 - **Dark theme** matching the Energy Rhythm palette
 - **CSS animations** (fade-in, ring draw, bar grow)
 - **Zero dependencies** — pure Node.js with built-in `fetch`
-- **No cron** — updates only on push or manual trigger
+- **Daily updates** — also runs on push or manual trigger
 
 ---
 
@@ -79,3 +79,39 @@ Automatically generates a premium SVG showing your stats and most used languages
 ## License
 
 [MIT](./LICENSE)
+
+## Lines of Code card
+
+A separate 775px card is generated at `dist/lines-of-code.svg`. Place it between
+your stats card and contribution graph:
+
+```html
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/GitHub-Stats-Card/main/dist/lines-of-code.svg" alt="Lines of Code: net changes, added and removed lines" />
+</p>
+```
+
+The card displays **Net lines changed**, **Lines added**, and **Lines removed**.
+Net is additions minus deletions; it can be negative. This is historical textual
+change volume, not a count of currently surviving code or a productivity score.
+
+Counting rules:
+
+- All available history of commits authored by the selected GitHub account.
+- Public repositories owned by that account, excluding forks; default branches only.
+- All text files, including documentation, generated files, and imported content.
+- Known automatic graph-refresh commits are excluded by repository name, exact
+  commit message, and bot committer, even when older refreshes list you as author.
+- GitHub matches authors using the account ID. Unlinked author emails may be absent.
+- Totals are summed per repository, like the reference implementation; history
+  copied between separate non-fork repositories may be counted in each one.
+- Repositories and commit histories are fully paginated. Each history is pinned
+  to its discovered head commit.
+- A versioned Actions cache stores totals by repository head and author ID.
+  Unchanged heads are reused; changed heads are recomputed. Cache misses are safe.
+- Failed API requests fail generation instead of publishing a partial or zero count.
+- The existing `STATS_TOKEN` is reused. Generated images are committed as the bot.
+
+Run `npm run generate:loc` with `GITHUB_USERNAME` and `GH_TOKEN` set, and
+`npm test` for regression tests. After merging, wait for the first successful
+workflow to create the SVG before adding its URL to a profile README.
