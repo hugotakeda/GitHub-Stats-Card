@@ -90,7 +90,7 @@
 
   <!-- Language bar -->
   <g clip-path="url(#bar-clip)" class="bar-group">
-    <rect x="435" y="65" width="188.17" height="10" fill="#f1e05a"/><rect x="623.17" y="65" width="51.67700000000001" height="10" fill="#3178c6"/><rect x="674.847" y="65" width="23.157" height="10" fill="#4F5D95"/><rect x="698.004" y="65" width="17.329" height="10" fill="#663399"/><rect x="715.333" y="65" width="10.912" height="10" fill="#e34c26"/><rect x="726.245" y="65" width="10.137" height="10" fill="#dea584"/>
+    <rect x="435" y="65" width="188.201" height="10" fill="#f1e05a"/><rect x="623.201" y="65" width="51.67700000000001" height="10" fill="#3178c6"/><rect x="674.878" y="65" width="23.157" height="10" fill="#4F5D95"/><rect x="698.0350000000001" y="65" width="17.329" height="10" fill="#663399"/><rect x="715.364" y="65" width="10.912" height="10" fill="#e34c26"/><rect x="726.2760000000001" y="65" width="10.137" height="10" fill="#dea584"/>
   </g>
 
   <!-- Language legend -->
@@ -98,7 +98,7 @@
       <g class="fade-r" style="animation-delay:400ms">
         <circle cx="435" cy="105" r="5" fill="#f1e05a"/>
         <text x="449" y="109" class="lname">JavaScript</text>
-        <text x="449" y="124" class="lpct">60.70%</text>
+        <text x="449" y="124" class="lpct">60.71%</text>
       </g>
       <g class="fade-r" style="animation-delay:480ms">
         <circle cx="435" cy="143" r="5" fill="#3178c6"/>
